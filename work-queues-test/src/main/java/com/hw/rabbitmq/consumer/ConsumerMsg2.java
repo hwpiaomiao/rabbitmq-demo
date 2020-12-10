@@ -17,7 +17,7 @@ public class ConsumerMsg2 {
 	public static void main(String[] args) throws IOException, TimeoutException {
 		Connection connections = ConnectionUtils.getConnections();
 		final Channel channel = connections.createChannel();
-		channel.queueDeclare(QUEUE_NAME, false, false, false, null);
+		channel.queueDeclare(QUEUE_NAME, true, false, false, null);
 
 		//Fair distribution
 		int prefecthCount=1;

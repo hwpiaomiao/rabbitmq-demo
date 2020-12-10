@@ -44,6 +44,5 @@ public class ConsumerMsg1 {
 		};
 		boolean autoAck = false;
 		channel.basicConsume(QUEUE_NAME, autoAck, consumer);
-
 	}
 }

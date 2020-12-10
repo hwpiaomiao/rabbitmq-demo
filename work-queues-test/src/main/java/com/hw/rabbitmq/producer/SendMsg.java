@@ -24,7 +24,7 @@ public class SendMsg {
 		//open confirm
 		channel.confirmSelect();
 
-		for (int i = 0; i < 50; i++) {
+		for (int i = 0; i < 20; i++) {
 			String msg = "workQueue msg" + i;
 			channel.basicPublish("", QUEUE_NAME, MessageProperties.PERSISTENT_TEXT_PLAIN, msg.getBytes());
 			System.out.println("Send msg:" + msg);
