@@ -1,0 +1,13 @@
+spring:
+  port: 8001
+  rabbitmq:
+    host: 10.113.97.64
+    username: cmsuser
+    password: cmspwd
+    virtual-host: /cms
+    publisher-confirms: true
+    publisher-returns: true
+    listener:
+      simple:
+        acknowledge-mode: manual
+

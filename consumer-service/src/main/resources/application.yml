@@ -1,0 +1,21 @@
+spring:
+  port: 8002
+  rabbitmq:
+    host: 10.113.97.64
+    username: cmsuser
+    password: cmspwd
+    virtual-host: /cms
+    publisher-confirms: true
+    publisher-returns: true
+    listener:
+      simple:
+        prefetch: 1
+        acknowledge-mode: manual
+        retry:
+          enabled: true
+          initial-interval: 1000
+          max-attempts: 3
+          max-interval: 1000
+          multiplier: 1.0
+
+

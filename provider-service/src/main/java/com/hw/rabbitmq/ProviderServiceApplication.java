@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @EnableRabbit
 @SpringBootApplication
 public class ProviderServiceApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(ProviderServiceApplication.class, args);
 	}
