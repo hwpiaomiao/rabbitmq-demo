@@ -12,8 +12,8 @@ import com.hw.rabbitmq.ProviderServiceApplication;
  @author huang.wen
  created on 2020/12/11
  */
-@SpringBootTest(classes = ProviderServiceApplication.class)
-@RunWith(SpringRunner.class)
+//@SpringBootTest(classes = ProviderServiceApplication.class)
+//@RunWith(SpringRunner.class)
 public class SendMsgTest {
 	@Autowired
 	private SendMsService rabbitMqService;
